@@ -1,0 +1,123 @@
+/* line 4, ../sass/style.sass */
+body {
+  background: white;
+  font: 0.875em/1em "Sintony";
+  padding: 1em;
+  width: 20em; }
+
+/* line 10, ../sass/style.sass */
+h1 {
+  font-size: 1.2em;
+  text-transform: uppercase; }
+
+/* line 14, ../sass/style.sass */
+a {
+  color: #333333; }
+
+/* line 17, ../sass/style.sass */
+a:focus {
+  outline: none; }
+
+/* line 20, ../sass/style.sass */
+.icon-question {
+  color: #979797;
+  float: right;
+  position: absolute;
+  right: 0.6em;
+  text-decoration: none;
+  top: 0.5em;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; }
+  /* line 30, ../sass/style.sass */
+  .icon-question:hover {
+    color: #333333; }
+
+/* line 33, ../sass/style.sass */
+#toolbar {
+  text-align: right; }
+  /* line 37, ../sass/style.sass */
+  #toolbar [class^="icon"] {
+    color: #cacaca;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0.7em 0.3em; }
+
+/* line 46, ../sass/style.sass */
+#search input {
+  border: none;
+  border-radius: 2px;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.2);
+  font-family: "Sintony";
+  outline: none;
+  padding: 0.5em;
+  width: 90%;
+  -webkit-transition: 0.5s box-shadow; }
+  /* line 57, ../sass/style.sass */
+  #search input:focus {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4); }
+/* line 60, ../sass/style.sass */
+#search img, #search input {
+  display: inline-block; }
+/* line 63, ../sass/style.sass */
+#search img {
+  vertical-align: middle; }
+
+/* line 66, ../sass/style.sass */
+::-webkit-input-placeholder {
+  color: #cacaca;
+  font-family: "Sintony";
+  font-size: 0.8em;
+  line-height: 1.7;
+  vertical-align: middle; }
+
+/* line 75, ../sass/style.sass */
+#view ol {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  /* line 80, ../sass/style.sass */
+  #view ol li {
+    border-top: 1px solid #e6e6e6;
+    padding: 0.5em 0;
+    display: block;
+    opacity: 0.7; }
+    /* line 86, ../sass/style.sass */
+    #view ol li a {
+      color: #333333;
+      display: block;
+      float: left;
+      font-size: 0.7em;
+      text-decoration: none;
+      width: 90%; }
+    /* line 94, ../sass/style.sass */
+    #view ol li img {
+      display: block;
+      float: left;
+      margin-right: 0.5em;
+      vertical-align: middle; }
+      /* line 100, ../sass/style.sass */
+      #view ol li img span {
+        color: #222222;
+        font-weight: 700; }
+    /* line 104, ../sass/style.sass */
+    #view ol li:first-child {
+      border: none;
+      margin-top: 0.5em; }
+    /* line 108, ../sass/style.sass */
+    #view ol li.current {
+      font-size: 1em;
+      opacity: 1; }
+      /* line 112, ../sass/style.sass */
+      #view ol li.current a {
+        font-size: 1em; }
+/* line 115, ../sass/style.sass */
+#view .no-bookmarks-found {
+  line-height: 1.3em;
+  text-align: center; }
+
+/* line 119, ../sass/style.sass */
+.notice {
+  display: none;
+  font-size: 0.8em;
+  text-align: center; }

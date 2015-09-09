@@ -1,0 +1,44 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/bookmark-128.png",
+      "default_popup": "index.html",
+      "default_title": "Bookmark-f6"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Alt+Shift+H"
+         }
+      }
+   },
+   "description": "Chrome Bookmark Search Extension",
+   "icons": {
+      "128": "images/bookmark-128.png",
+      "16": "images/bookmark-16.png",
+      "48": "images/bookmark-48.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "25",
+   "name": "Rediscover",
+   "omnibox": {
+      "keyword": "*"
+   },
+   "permissions": [ "bookmarks", "tabs", "chrome://favicon/" ],
+
+   "content_scripts": [
+   {
+      "matches": [ "http://*.baidu.com/*", "https://*.baidu.com/*", "http://*.google.com/*", "https://*.google.com/*" ],
+      "js": ["js/jquery-1.9.0.min.js", "js/bookmark.js"],
+      // "run_at": "document_start",
+      "all_frames": true
+    }
+   ],
+   "web_accessible_resources": [//设置你js中可访问的资源文件，如果不设置当你调用图片的时候会显示XX
+      "background.html",
+      "chrome://favicon/"
+   ],
+   "version": "0.2"
+}
